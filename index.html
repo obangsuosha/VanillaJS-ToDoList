@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>What To Do?</title>
+</head>
+<body>
+    <div class="bg">
+        <image class="bgimg" src="./images/bg1.jpg"></image>
+    </div>
+    
+    <div class="welcome">
+        <image class="bgimg" src="./images/bg1.jpg"></image>
+        <input class="username" type="text" placeholder="What's your name?">
+    </div>
+    <div class="dashboard">
+        <div class="infobox">
+            <div class="infobox__column">
+                <h1 class="userinfo">                    
+                </h1> 
+            </div>
+            <div class="infobox__column">
+                <div class="timeinfo__box">
+                    <h1 class="days"></h1>
+                    <h1 class="times"></h1>                     
+                </div>
+            </div>
+            <div class="infobox__column">
+                
+                    <h1 class="location"></h1>
+                <div class="weatherbox">
+                    <img class="wicon" src="" alt="Weather icon">
+                    <h1 class="weatherinfo"></h1>                
+                    <img class="celsius" src="./images/celsius.png" alt="Weather icon">
+                </div>
+                    
+                
+            </div>
+            <div class="btnlist">
+                <h1>Tasks <span class="task-num"></span></h1>
+                <h1>Done <span class="fin-num"></span></h1>                
+            </div>
+        </div>
+        
+        <div class="taskbox">            
+            <div class="taskbox__column">
+                <ul class="pl"></ul>
+            </div>
+            <div class="taskbox__column">
+                <ul class="fl"></ul>
+            </div>
+        </div>
+        <div class="inputbox">
+            <input class="addtask" type="text" placeholder="What to do.. ">
+            <input class="addtask-btn" type="submit" value="➕">
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+    <script src="./js/time.js"></script>
+    <script src="./js/weather.js"></script>
+    <script src="./js/task.js"></script>
+</body>
+</html>
