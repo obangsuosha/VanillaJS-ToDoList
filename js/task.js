@@ -267,7 +267,7 @@ function inputHandler() {
 }
 
 function loadTask() {
-    console.log('Loading');
+    console.log('Loading.....');
     const plist = JSON.parse(localStorage.getItem(PENDING));
     console.log(plist);
     if (plist !== null) {
