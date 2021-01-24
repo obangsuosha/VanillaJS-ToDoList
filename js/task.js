@@ -270,14 +270,19 @@ function loadTask() {
     console.log('Loading');
     const plist = JSON.parse(localStorage.getItem(PENDING));
     console.log(plist);
-    plist.forEach((item) => {
-        addTag(PENDING, item);
-    });
+    if (plist !== null) {
+        plist.forEach((item) => {
+            addTag(PENDING, item);
+        });
+    }
+
     const flist = JSON.parse(localStorage.getItem(FINISHED));
     console.log(flist);
-    flist.forEach((item) => {
-        addTag(FINISHED, item);
-    });
+    if (flist !== null) {
+        flist.forEach((item) => {
+            addTag(FINISHED, item);
+        });
+    }
 }
 
 function init() {
